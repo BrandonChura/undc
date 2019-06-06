@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de Registro</title>
+	<link rel="stylesheet" href="css/estilos1.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+
+ 
+
+<main role="main">
+
+	<section class="content-form">
+
+		<h2 class="sub-title">DATOS GENERALES</h2>
+
+		<form action="" method="POST" id="registrar-form" >
+		  
+			<div class="form-group width-12">
+				 <div class="width-6">
+				  <input type="text" placeholder="Nombre *" class="form-control" name="nombre" id="nombre" /> 
+				 </div> 
+				 <div class="width-6">
+				  <input type="text" placeholder="Apellidos *" class="form-control" name="apellidos" id="apellidos" /> 
+				 </div>  
+			</div>
+
+			<div class="form-group">
+				 <div class="width-12">
+				 	<input type="text" placeholder="Dirección *" class="form-control" name="direccion" id="direccion" />
+				 </div>
+			</div>
+			  
+			 <div class="form-group width-12">
+				 <div class="width-6">
+				  <input type="text" placeholder="Teléfono *" class="form-control" name="telefono" id="telefono" /> 
+				 </div> 
+				 <div class="width-6">
+				  <input type="number" placeholder="Edad" min="18" max="35" class="form-control" value="18" name="edad" id="edad" />
+				 </div>  
+			 </div>
+			    
+			 <div class="form-group width-12">
+				  <h3 class="sub-form">Grado Academico</h3>
+				  <div class="width-4">
+				    <label for="Estudiante"><input type="radio" id="Estudiante" name="Grado Academico" value="Estudiante"/>Estudiante</label>
+				  </div>
+				  <div class="width-4">
+				    <label for="Docente"><input type="radio" id="Docente" name="Grado Academico" value="Docente" />Docente</label>
+				  </div>
+				  <div class="width-4">
+				    <label for="Director"><input type="radio" id="Director" name="Grado Academico" value="Director" />Director</label>
+				  </div>
+			 </div>
+			  
+			 <div class="form-group width-12">
+				  <h3 class="sub-form">Carrera Universitaria</h3>
+				  
+				  <div class="width-4">
+				    <label for="Ingenieria de Sistemas"><input type="checkbox"  id="Ingenieria de Sistemas" name="Ingenieria de Sistemas" checked value="Ingenieria de Sistemas"/>Ingenieria de Sistemas</label>
+				  </div>
+				  <div class="width-4">
+				    <label for="Administración"><input type="checkbox" id="Administración" name="Administración" value="Administración"/>Administración</label>
+				  </div>
+				  <div class="width-4">
+				    <label for="Contabilidad"><input type="checkbox" id="Contabilidad" name="Contabilidad" value="Contabilidad"/>Contabilidad</label>
+				  </div>
+			  
+			 </div>
+			 <div class="form-group width-12">
+				  <h3 class="sub-form">Fecha de ingreso</h3>
+				  <input type="date" nombre="fecha" min="2017-06-01" max="2017-12-31" value="2017-06-01" step="1" class="form-control"/> 
+			 </div>
+			 <div class="form-group width-12">
+			      <h3 class="sub-form">Descripción General</h3>
+				  <textarea cols="22" rows="10" class="form-control">
+				    
+				  </textarea>
+			 </div>
+			 <div class="form-group width-12">
+					<input type="submit" value="REGISTRAR" class="form-control btn btn-principal" id="btn-registrar"/>
+					 
+			 </div>
+	  
+		</form>
+
+	</section>
+</main>
+<footer>
+	
+</footer>
+	
+</body>
+</html>
